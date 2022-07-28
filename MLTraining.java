@@ -20,7 +20,7 @@ public class MLTraining {
 		
 	    JavaSparkContext jsc = new JavaSparkContext(conf);
 	    
-	    String train_path = "s3n://wine-classification/TrainingDataset.csv";
+	    String train_path = "s3n://pysparkbucket93/Wine-App-2/TrainingDataset.csv";
 		JavaRDD<String> train_data = jsc.textFile(train_path);
 		
 		String first_t = train_data.first();
@@ -38,7 +38,7 @@ public class MLTraining {
 	
 		train_parsed_data.cache();
 		
-	    String valid_path = "s3n://wine-classification/ValidationDataset.csv";
+	    String valid_path = "s3n://pysparkbucket93/Wine-App-2/ValidationDataset.csv";
 		JavaRDD<String> validation_data = jsc.textFile(valid_path);
 		
 		String firstV = validation_data.first();
