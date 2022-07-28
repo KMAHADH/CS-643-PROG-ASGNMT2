@@ -77,7 +77,7 @@ public class MLTraining {
 		System.out.println("Validation F Measure = " + f_score);
 		System.out.println("----------------------------------------------------------------------------");
 		System.out.println();
-		model.save(jsc.sc(), "s3n://pysparkbucket93/Wine-App-2/TrainedModel");
+		model.save(jsc.sc(), "s3n://pysparkbucket93/Wine-App-2/LogisticRegressionModel");
 		jsc.stop();
 
 	}
