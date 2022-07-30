@@ -75,9 +75,18 @@ public class LogisticRegressionPrediction {
 		System.out.println("Accuracy = " + accuracy);
 		System.out.println("----------------------------------------------------------------------------");
 		System.out.println();
-		
+	
+		System.out.println();
+		System.out.println("----------------------------------------------------------------------------");
 		System.out.format("Weighted precision = %f\n", metrics.weightedPrecision());
+		System.out.println("----------------------------------------------------------------------------");
+		System.out.println();
+		
+		System.out.println();
+		System.out.println("----------------------------------------------------------------------------");
 		System.out.format("Weighted recall = %f\n", metrics.weightedRecall());
+		System.out.println("----------------------------------------------------------------------------");
+		System.out.println();
 		
 		System.out.println();
 		System.out.println("----------------------------------------------------------------------------");
